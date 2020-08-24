@@ -62,22 +62,8 @@ text("TIME:"+time,displayWidth/2-200,displayHeight/2-200)
   }
 if(touches.length>0)
 {
-  if(touches[0].x>player.x)
-  {
-    player.x=player.x+1;
-  }
-  else if(touches[0].x<player.x)
-  {
-    player.x=player.x-1;
-  }
-  else if (touches[0].y>player.y)
-  {
-    player.y=player.y+1;
-  }
-  else if (touches[0].y<player.y)
-  {
-    player.y=player.y-1;
-  }
+  touches[0].x=player.x;
+  touches[0].y=player.y;
 }
 
   if(keyDown(LEFT_ARROW)){
